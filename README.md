@@ -21,7 +21,12 @@ The dataset covers 54 stores and 33 product families.
 5. Generate and validate a Kaggle submission containing 28,512 predictions.
 
 ## Results
-The project reports a 14.3% reduction in RMSE compared with a previous-week baseline. This result is subject to review of the validation approach and feature leakage.
+The Auto-ARIMA model achieved an RMSE of **37,880.70**, compared with **40,209.50** for a fixed-origin seasonal naïve baseline, representing a **5.79% reduction in RMSE**.
+
+These results were obtained using a 16-day historical holdout (July 31–August 15, 2017) for the **GROCERY I** product family, with sales aggregated across stores. This is a single-family evaluation, not a performance claim across the full dataset.
+### Forecast Visualization
+
+![GROCERY I 16-day forecast validation](images/grocery_forecast_validation.png)
 
 ## Dataset
 [Kaggle Store Sales - Time Series Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)
